@@ -1,0 +1,13 @@
+.productsWrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100% !important;
+    background-color: #efefef;
+    
+
+}
+
+
+    
