@@ -21,6 +21,7 @@
     border: 0;
     font-size: 14px;
     font-family: Roboto, Arial, sans-serif;
+    color:black !important;
 }
 
 .nav-logo {
@@ -28,10 +29,10 @@
     height: 3rem;
 }
 
-.shop-cart-img {
+/* .shop-cart-img {
     width: 1.5rem;
     height: 1.5rem;
-}
+} */
 
 .nav-cart {
     width: 8rem;
@@ -47,4 +48,32 @@
 
 a {
     text-decoration: none !important;
+}
+
+@media screen and (max-width:600px) {
+    .nav-wrapper {
+     
+        height: 3.5rem;
+        justify-content: space-evenly;
+        padding: 0px;
+        /* align-items: center; */
+        
+    }
+    
+    
+.nav-search {
+    width: 5rem;
+    height: 30px;
+   
+}
+
+.nav-logo {
+    width: 2rem;
+    height: 2rem;
+}
+.nav-link-home{
+    display: none;
+}
+    
+
 }

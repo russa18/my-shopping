@@ -96,3 +96,22 @@
     color: #878787;
 
 }
+
+
+@media screen and (max-width:600px) {
+    .prod-wrapper {
+        flex-direction: column;
+    }
+
+    .prod-img {
+        width: 10rem;
+        height: 10rem;
+margin: auto;
+        padding:5px;
+    
+    }
+    svg{
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+    }
+}

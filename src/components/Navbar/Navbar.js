@@ -9,26 +9,21 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 const Navbar = () => {
-    const item=useSelector((state) => state.cart)
+    const item = useSelector((state) => state.cart)
 
     return (
         <>
-
             <div className='nav-wrapper'>
-                {/* <div className="nav-logo"> */}
-                    <Link to="/">
-                        <img className="nav-logo" src={shop} alt="" />
-                    </Link>
-                {/* </div> */}
+                <Link to="/">
+                    <img className="nav-logo" src={shop} alt="" />
+                </Link>
                 <div >
                     <input type="search" placeholder="Search for products, brands and more" name="nav-search" id="" className='nav-search nav-link' />
                     <Button variant="contained"><SearchIcon /></Button>
                 </div>
 
-                <Link to="/" className="nav-link"><HomeIcon fontSize="large"/></Link>
-                {/* <div className="nav-cart"> */}
-                    <Link to="/cart" className="nav-link"  ><ShoppingCartIcon fontSize="large"/></Link>
-                {/* </div> */}
+                <Link to="/" className="nav-link nav-link-home"><HomeIcon fontSize="large" /></Link>
+                <Link to="/cart" className="nav-link "  ><ShoppingCartIcon fontSize="large" /></Link>
                 <div className='cart-count'>
                     cart items : {item.length}
                 </div>

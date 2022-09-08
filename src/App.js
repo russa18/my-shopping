@@ -15,13 +15,10 @@ import { Provider } from 'react-redux';
 
 function App() {
   return (
-
-
     <div className="App">
       <Provider store={store}>
         <Router>
           <Navbar />
-
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
